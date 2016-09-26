@@ -544,14 +544,14 @@ void process_instruction(){
             BaseR=get_8_6(IR);
             int amount = get_3_0(IR);
             temp =get_val(BaseR);
-            if(IR & 0x0010){ //R
-                if(IR & 0x0020){// arthmetic 1
+            if(IR & 0x0010){ /*R*/
+                if(IR & 0x0020){/* arthmetic 1 */
                     int a = get_val(BaseR) & 0x8000;
                     for( int i = 0; i < amount; i++){
                         temp = a | ((temp>>1) & 0x7FFF) ;
                     }
                     NEXT_LATCHES.REGS[DR] = Low16bits(temp);
-                }else{ //L
+                }else{ /*L*/
                     for( int i = 0; i < amount; i++){
                         temp = (temp>>1) & 0x7FFF ;
                     }
