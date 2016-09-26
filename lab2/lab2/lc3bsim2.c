@@ -455,7 +455,7 @@ int sext_10_0 (int IR){
 }
 void set_conditions(int reg){
     int x = NEXT_LATCHES.REGS[reg];
-    if(x & 0x0080) x = x | 0xFFFF0000;
+    if(x & 0x8000) x = x | 0xFFFF0000;
     if(x<0){
         NEXT_LATCHES.N=1;
         NEXT_LATCHES.Z=0;
@@ -506,7 +506,7 @@ void process_instruction(){
             BaseR = get_8_6(IR);
             NEXT_LATCHES.PC = CURRENT_LATCHES.REGS[BaseR];
             break;
-        case 8:             /*JSR*/
+        case 4:             /*JSR*/
             NEXT_LATCHES.REGS[7]=NEXT_LATCHES.PC;
             if(IR & 0x0800) NEXT_LATCHES.PC += (sext_10_0(IR)<<1);
             else NEXT_LATCHES.PC = CURRENT_LATCHES.REGS[get_8_6(IR)];

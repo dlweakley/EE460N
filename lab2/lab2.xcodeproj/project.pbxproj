@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A6AF22E91D98B67300B34EFE /* lc3sim2.c in Sources */ = {isa = PBXBuildFile; fileRef = A6AF22E81D98B67300B34EFE /* lc3sim2.c */; };
+		A6AF22E91D98B67300B34EFE /* lc3bsim2.c in Sources */ = {isa = PBXBuildFile; fileRef = A6AF22E81D98B67300B34EFE /* lc3bsim2.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,7 @@
 
 /* Begin PBXFileReference section */
 		A6AF22E51D98B67300B34EFE /* lab2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = lab2; sourceTree = BUILT_PRODUCTS_DIR; };
-		A6AF22E81D98B67300B34EFE /* lc3sim2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = lc3sim2.c; sourceTree = "<group>"; };
+		A6AF22E81D98B67300B34EFE /* lc3bsim2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = lc3bsim2.c; sourceTree = "<group>"; };
 		A6AF22EF1D98BA1500B34EFE /* assembler.linux */ = {isa = PBXFileReference; lastKnownFileType = file; path = assembler.linux; sourceTree = "<group>"; };
 		A6AF22F01D98BA1500B34EFE /* otest1.obj */ = {isa = PBXFileReference; explicitFileType = sourcecode.asm; fileEncoding = 4; path = otest1.obj; sourceTree = "<group>"; };
 		A6AF22F11D98BA1500B34EFE /* source.asm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm.asm; path = source.asm; sourceTree = "<group>"; };
@@ -67,7 +67,7 @@
 				A6AF22F11D98BA1500B34EFE /* source.asm */,
 				A6AF22F21D98BA1500B34EFE /* test1.asm */,
 				A6AF22F01D98BA1500B34EFE /* otest1.obj */,
-				A6AF22E81D98B67300B34EFE /* lc3sim2.c */,
+				A6AF22E81D98B67300B34EFE /* lc3bsim2.c */,
 			);
 			path = lab2;
 			sourceTree = "<group>";
@@ -129,7 +129,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6AF22E91D98B67300B34EFE /* lc3sim2.c in Sources */,
+				A6AF22E91D98B67300B34EFE /* lc3bsim2.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
